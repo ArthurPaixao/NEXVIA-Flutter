@@ -1,0 +1,76 @@
+import '../models/pessoa.dart';
+
+List<Pessoa> pessoasDeExemplo() {
+  final agora = DateTime.now();
+
+  return [
+    Pessoa(
+      id: '1',
+      nome: 'Maria das Dores Silva',
+      idade: 82,
+      endereco: 'Rua da Encosta, 120',
+      necessidade: 'Acamado(a)',
+      padrinho: 'João Pereira',
+      telefonePadrinho: '11900000001',
+      padrinhoReserva: 'Ana Souza',
+      destinoSeguro: 'Escola Municipal do bairro',
+      observacoes:
+          'Levar remédios de pressão e documentos. O neto trabalha à noite.',
+      prioritaria: true,
+      statusDesde: agora,
+    ),
+    Pessoa(
+      id: '2',
+      nome: 'Antônio Ribeiro',
+      idade: 77,
+      endereco: 'Rua do Córrego, 45',
+      necessidade: 'Idoso(a) que mora sozinho(a)',
+      padrinho: 'Carla Mendes',
+      telefonePadrinho: '11900000002',
+      padrinhoReserva: 'Rafael Lima',
+      destinoSeguro: 'Casa da filha, na parte alta',
+      observacoes: 'Escuta pouco: bater forte na porta.',
+      statusDesde: agora,
+    ),
+    Pessoa(
+      id: '3',
+      nome: 'Luciana Martins',
+      idade: 45,
+      endereco: 'Travessa das Flores, 8',
+      necessidade: 'Pessoa com deficiência',
+      padrinho: 'Marcos Oliveira',
+      telefonePadrinho: '11900000003',
+      padrinhoReserva: 'Beatriz Santos',
+      destinoSeguro: 'Quadra coberta da associação',
+      observacoes: 'Usa cadeira de rodas. A saída pelos fundos não tem degrau.',
+      statusDesde: agora,
+    ),
+    Pessoa(
+      id: '4',
+      nome: 'Pedro Almeida',
+      idade: 68,
+      endereco: 'Rua da Encosta, 310',
+      necessidade: 'Depende de aparelho elétrico',
+      padrinho: 'Sandra Costa',
+      telefonePadrinho: '11900000004',
+      padrinhoReserva: 'Não definido',
+      destinoSeguro: 'Unidade Básica de Saúde',
+      observacoes: 'Usa concentrador de oxigênio. Levar o cilindro reserva.',
+      prioritaria: true,
+      statusDesde: agora,
+    ),
+    Pessoa(
+      id: '5',
+      nome: 'Helena Barbosa',
+      idade: 90,
+      endereco: 'Rua do Mirante, 77',
+      necessidade: 'Idoso(a) que mora sozinho(a)',
+      padrinho: 'Tiago Nunes',
+      telefonePadrinho: '11900000005',
+      padrinhoReserva: 'Lúcia Nunes',
+      destinoSeguro: 'Igreja da praça',
+      observacoes: 'Anda com andador. Precisa de ajuda na escada.',
+      statusDesde: agora,
+    ),
+  ];
+}
